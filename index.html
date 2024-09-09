@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico com barras</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <body onload="drawGraph()">
+        <div class="canvasContainer">
+            <canvas id="graph" width="500" height="300"></canvas>
+            <canvas id="subTitles" width="500" height="20"></canvas>
+        </div>
+        <nav>
+            <label for="legends">
+                <input type="checkbox" name="legends" id="legends" checked/>
+                <span>Legenda</span>
+            </label>
+            <label for="goal">
+                <input type="checkbox" name="goal" id="goal" onchange="(e) => changeGoal(e)" checked/>
+                <span>Meta</span>
+            </label>
+            <label for="offBars">
+                <input type="checkbox" name="offBars" id="offBars" checked/>
+                <span>Barras</span>
+            </label>
+        </nav>
+        <script src="./script.js"></script>
+    </body>
+</html>
